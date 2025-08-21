@@ -1,8 +1,36 @@
-body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-#messages { border: 1px solid #ccc; height: 400px; padding: 10px; overflow-y: scroll; margin-bottom: 10px; }
-#messageInput { width: 70%; padding: 10px; }
-#sendBtn { width: 25%; padding: 10px; }
-.message { margin: 5px 0; }
-.join { color: green; font-style: italic; }
-.leave { color: red; font-style: italic; }
-.username { font-weight: bold; color: #0066cc; }
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#messages {
+  border: 1px solid #ccc;
+  height: 400px;
+  padding: 10px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+#messageInput {
+  width: 70%;
+  padding: 10px;
+}
+#sendBtn {
+  width: 25%;
+  padding: 10px;
+}
+.message {
+  margin: 5px 0;
+}
+.join {
+  color: green;
+  font-style: italic;
+}
+.leave {
+  color: red;
+  font-style: italic;
+}
+.username {
+  font-weight: bold;
+  color: #0066cc;
+}
