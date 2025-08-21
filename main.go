@@ -24,8 +24,8 @@ var upgrader = websocket.Upgrader{
 func main() {
 	hub := newHub()
 	go hub.run()
-
-	http.HandleFunc("/", ServeHome)
+	fs := http.FileServer(http.Dir("./static"))
+	http.Handle("/ui/", http.StripPrefix("/ui/", fs))
 	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
 		HandleWebSocket(hub, w, r)
 	})
